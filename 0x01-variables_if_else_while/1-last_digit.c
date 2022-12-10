@@ -31,6 +31,9 @@ int main(void)
 	{
 		printf("%i and is 0\n", num);
 	}
+
+
+
 	return (0);
 }
 
