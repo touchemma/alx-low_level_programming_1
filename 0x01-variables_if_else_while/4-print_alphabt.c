@@ -1,8 +1,7 @@
 #include <stdio.h>
 /**
  * main - main block
- * Description: print the alphabet in lowercase
- * and the in uppercase, follow by a new line
+ * Description: get a random number and check its 
  * Return: 0
  */
 int main(void)
@@ -11,61 +10,15 @@ int main(void)
 
 	while (c <= 'z')
 	{
-		putchar(c);
-		c++;
-	}
-	c = 'A';
-
-	while (c <= 'Z')
-	{
-		putchar(c);
+		if (c != 'e' && c != 'q')
+		{
+			putchar(c);
+		}
 		c++;
 	}
 	putchar('\n');
 	return (0);
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
