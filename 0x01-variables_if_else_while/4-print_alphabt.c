@@ -1,20 +1,46 @@
 #include <stdio.h>
-#include <stdlib.h>
 /**
- * main - return alphabets both except e and q
+ * main - return alphabetics except e and q
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char ch = 'a';
+	char b = 'a';
 
-	while (ch <= 'z')
+	while (b <= 'z')
 	{
-		if ((ch != 'q') && (ch != 'e'))
+		if (b != 'e' && b != 'q')
 		{
-			putchar(ch);
+			putchar(b);
 		}
-		putchar('\n');
-		return (0);
+		b++;
 	}
+	putchar('\n');
+	return (0);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
