@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 /**
- * Main - main block
+ * main - main block
  * Description: write the program that prints possible
  * different combinatio of two digits
  * Numbers must be separated by ,, followed a space
