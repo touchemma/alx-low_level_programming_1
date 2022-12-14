@@ -14,6 +14,7 @@ void times_tabbe(void)
 		for (b = 0; a <= 9; b++)
 
 			c = a * b;
+
 			if ((c / 10) == 0)
 			{
 				if (b == 0)
@@ -28,7 +29,7 @@ void times_tabbe(void)
 				}
 				if (b < 9)
 				{
-					_putchar(','):
+					_putchar(',');
 					_putchar(' ');
 				}
 			}
@@ -36,5 +37,5 @@ void times_tabbe(void)
 
 	}
 	_putchar('\n');
-}
 
+}
