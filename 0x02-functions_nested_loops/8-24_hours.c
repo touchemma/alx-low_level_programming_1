@@ -1,39 +1,46 @@
 #include "main.h"
 /**
- * times_table - print the zero times table
- * Return: 0 (Always Success) 
+ * Jack_br - print every minute of the day
+ * Return: void
  */
-
-void times_table(void)
+void jack_brauer(void)
 {
-	int a, b, c;
+	int h1;
+	int h2;
+	int m1;
+	int m2;
+	int a = 9;
 
-	for (a = 0; a <= 9; a++)
-
+	h2 = 0;
+	while (h2 <= 2)
 	{
-		for (b = 0; b <= 9; b++)
-
-			c = a * b;
-
-			if ((c / 10) == 0)
+		if (h2 == 2)
+		{
+			/*Restrain to 23h, not 29*/
+			a = 3;
+		}
+		hh1 = 0;
+		while (h1 <= a)
+		{
+			m2 = 0;
+			while (m2 <= 5)
 			{
-				if (b == 0)
+				m1 = 0;
+				while (m1 <= 9)
 				{
-					_putchar('0');
-				}
+					_putchar('0' + h2);
 
-				if (b != 0)
-				{
-					_putchar(' ');
-					_putchar((c % 10) + '0');
-				}
-				if (b < 9)
-				{
+					_putchar('0' + h1);
 					_putchar(',');
-					_putchar(' ');
+					_putchar('0' + m2);
+					_putchar('0' + m1);
+					_putchar('\n');
+					m1++;
 				}
+				m2++;
 			}
-			else	
+			h1++;
+		}
+		h2++;
 	}
-	_putchar('\n');
 }
