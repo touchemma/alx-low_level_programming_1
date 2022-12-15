@@ -1,5 +1,6 @@
 #include "main.h"
 /**
+ * main -main block
  * Jack_brauer - print every minute of the day
  * Return: void
  */
