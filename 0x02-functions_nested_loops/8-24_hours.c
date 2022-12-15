@@ -19,7 +19,7 @@ void jack_brauer(void)
 			/*Restrain to 23h, not 29*/
 			a = 3;
 		}
-		hh1 = 0;
+		h1 = 0;
 		while (h1 <= a)
 		{
 			m2 = 0;
