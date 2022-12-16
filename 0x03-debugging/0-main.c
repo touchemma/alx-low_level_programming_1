@@ -7,12 +7,10 @@
 
 int main(void)
 {
-int main(void)
-{
-int i;
+	int i;
 
-i = 0;
-positive_or_negative(i);
+	i = 0;
+	positive_or_negative(i);
 
-return (o);
+	return (0);
 }
