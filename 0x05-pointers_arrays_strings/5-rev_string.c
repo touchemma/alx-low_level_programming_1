@@ -12,7 +12,7 @@ void rev_string(char *s)
 
 	while (count > 0)
 	{
-		if (s[count] =='\0')
+		if (s[count] == '\0')
 			break;
 		count++;
 	}
@@ -25,5 +25,4 @@ void rev_string(char *s)
 			*(str   + j) = *(str + (j -1));
 			*(str + (j - 1)) = temp;
 		}
-	}
 }
