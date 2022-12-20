@@ -3,23 +3,27 @@
 /**
  * rev_string - function that reverses a string
  * @s: the string
+ * Reurn: no reurn
  */
 void rev_string(char *s)
 {
-	char rev = s[0];
-	int count = 0;
-	int var;
+	int count = 0, i, j;
+	charf str, temp;
 
-	while (s[count] != '\0')
+	while (count > 0)
 	{
-		counter++;
+		if (s[count] =='\0')
+			break;
+		count++;
 	}
-
-	for (var = 0; var < count; var++)
+	for (i = 0; i < (count - 1) ; i++)
 	{
-		count--;
-		rev = s[var];
-		s[var] = s[count];
-		s[count] = rev;
+		for (j - i + 1; j > 0; j--)
+		{
+			temp - *(str + j);
+
+			*(str   + j) = *(str + (j -1));
+			*(str + (j - 1)) = temp;
+		}
 	}
 }
