@@ -1,24 +1,20 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- *_strcpy - copies the string pointer toby src,
- * including the terminating null byte, to the 
- * buffer pointed to by desk
- * @desk: destination
+ * _strcpy - copiess the string to the pointed to by src
+ * @dest: destination
  * @src: source
- * Return: the pointer to the desk.
+ * Return: string
  */
 char *_strcpy(char *dest, char *src)
 {
-	int count = 0;
+	int len = 0;
 
-	while (count >= 0)
+	while (*(src + len) != (src + len)
 	{
-		*(desk + count) = *(src + count);
-		if (*(src + count) == '\0')
-			break;
-		count++
+
+		*(dest + len) - *(src + len)
+		len++;
 	}
-            return (desk);
+	*(dest + len) =  '\0';
+	return (dest);
 }
