@@ -1,22 +1,21 @@
 #include "main.h"
 
 /**
- * _stencat - join two strings with n bytes
+ * _strncat - join two strings with n bytes
  * @dest: copy to
  * @src: copy from
- * @n: number of char to be copied
+ * @n: numberof char to be copied
  * Return: dest
  */
-char *_stencat(char *dest, char *src, int n)
+char *_strncat(char *dest, char *src, int n)
 {
 	int i;
 	int j;
 
-	i = 0;
+	i =  0;
 	while (dest[i] != '\0')
 	{
 		i++;
-
 	}
 	j = 0;
 	while (j < n && src[j] != '\0')
