@@ -1,17 +1,22 @@
 #include "main.h"
-#include <stdio.h>
 /**
- * main - check the code
- *
- * Return: Always 0.
+ * _strpbrk - Entry point
+ * @s: input
+ * @accept: input
+ * Return: Always 0 (success)
  */
-int main(void)
+char *_strpbrk(char *s, char *accept)
 {
-	char *s = "hello, world";
-	char *f = "oleh";
-	unsigned int n;
+	int k;
 
-	n = _strspn(s, f);
-	printf("%u\n", n);
-	return (0);
+	while (*s)
+	{
+		for (k = 0; accept[k]; k++)
+		{
+			if (*s == accept[k])
+				return (s);
+		}
+	s++;
+	}
+	return ('\0');
 }
