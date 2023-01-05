@@ -2,7 +2,7 @@
 /**
  * evaluate_name - recursion loop
  * @num: num
- * iterator: number to iterate
+ * @iterator: number to iterate
  * Return: return 1 or 0
  */
 int evaluate_num(int num, int iterator)
