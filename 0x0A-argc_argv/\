@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 /* Declaring variables*/
 int count = 0;
-
+	
 if (argv > 0)
 {
 /* While - print each arguments */
@@ -23,4 +23,3 @@ count++;
 }
 return (0);
 }
-
