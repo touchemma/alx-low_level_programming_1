@@ -7,7 +7,7 @@
  * @av: array of arguments
  * Return: Pointer to the new string (Success), NULL (Error)
  */
-car *argstostr(int ac, char **av)
+char *argstostr(int ac, char **av)
 {
 	int i, j, k, len;
 
@@ -35,5 +35,5 @@ car *argstostr(int ac, char **av)
 		str[k] = '\n';
 		k++;
 	}
-	return (str);
+	return(str);
 }
