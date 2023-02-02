@@ -23,7 +23,7 @@ size_t looped_listint_len(const listint_t *head)
 		if (tortoise == hare)
 			while (tortoise != hare)
 			{
-				node++;
+				nodes++;
 				tortoise = tortoise->next;
 				hare = hare->next;
 			}
@@ -37,9 +37,11 @@ size_t looped_listint_len(const listint_t *head)
 	}
 	tortoise = tortoise->next;
 	hare = (hare->next)->next;
+	{
+		return (0);
+	}
 }
-return (0);
-}
+
 /**
 * print_listint_safe - Prints a listint_t list safely.
 * @head: A pointer to the head of the listint_t list.
@@ -57,6 +59,7 @@ size_t print_listint_safe(const listint_t *head)
 			printf("[%p] %d\n", (void *)head, head->n);
 head = head->next;
 		}
+	}
 	else
 	{
 		for (index = 0; index < nodes; index++)
