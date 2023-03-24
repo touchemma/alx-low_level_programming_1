@@ -1,14 +1,11 @@
 #include "main.h"
-/**
- * _abs - compute the abs value of an int
- * @n: the int in question
- * Return: the abs of the int.
-*/
 
+/**
+ * _abs - return abs value
+ * @n : number to check
+ * Return:0 0r 1
+ */
 int _abs(int n)
 {
-	if (n >= 0)
-		return (n);
-	else
-		return (-n);
+	return (n >= 0 ? n : n * -1);
 }
